@@ -74,6 +74,7 @@ class RefreshLocalizations {
     'uk': UkRefreshString(),
     'it': ItRefreshString(),
     'ja': JpRefreshString(),
+    'pt-BR': PtBrRefreshString()
   };
 
   RefreshString get currentLocalization {
@@ -97,7 +98,7 @@ class RefreshLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) {
-    return ['en', 'zh', 'fr', 'ru', 'uk', 'ja', 'it']
+    return ['en', 'zh', 'fr', 'ru', 'uk', 'ja', 'it', 'pt-BR']
         .contains(locale.languageCode);
   }
 
