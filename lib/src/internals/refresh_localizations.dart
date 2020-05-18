@@ -74,7 +74,7 @@ class RefreshLocalizations {
     'uk': UkRefreshString(),
     'it': ItRefreshString(),
     'ja': JpRefreshString(),
-    'pt_BR': PtBrRefreshString()
+    'pt': PtBrRefreshString()
   };
 
   RefreshString get currentLocalization {
@@ -98,7 +98,7 @@ class RefreshLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) {
-    return ['en', 'zh', 'fr', 'ru', 'uk', 'ja', 'it', 'pt_BR']
+    return ['en', 'zh', 'fr', 'ru', 'uk', 'ja', 'it', 'pt']
         .contains(locale.languageCode);
   }
 
@@ -186,7 +186,7 @@ class ChRefreshString implements RefreshString {
   String refreshingText = "刷新中…";
 }
 
-/// English
+/// Portuguese
 class PtBrRefreshString implements RefreshString {
   @override
   String canLoadingText = "Solte para carregar mais";
